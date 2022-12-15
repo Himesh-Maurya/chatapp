@@ -68,9 +68,9 @@ const server1 = app.listen(
 const io = new Server(server1, {
   pingTimeout: 60000,
   cors: {
-    // origin: "http://localhost:3000",
+    origin: "http://localhost:3000",
     // origin: "https://chatapp-cmoa0r9jb-himesh-maurya.vercel.app/",
-    origin: "*",
+    // origin: "*",
     // credentials: true,
   },
 });
