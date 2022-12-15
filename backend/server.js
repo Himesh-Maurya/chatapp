@@ -15,9 +15,9 @@ app.use(express.json()); //to accept json data
 dotenv.config();
 connectDB();
 
-app.get("/", (req, res) => {
-  res.send("hi i am himesh");
-});
+// app.get("/", (req, res) => {
+//   res.send("hi i am himesh");
+// });
 app.use("/api/user", userRoutes);
 app.use("/api/chat", chatRoutes);
 app.use("/api/message", messageRoutes);
