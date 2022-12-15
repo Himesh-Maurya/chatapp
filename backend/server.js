@@ -68,7 +68,8 @@ const server1 = app.listen(
 const io = new Server(server1, {
   pingTimeout: 60000,
   cors: {
-    origin: "http://localhost:3000",
+    // origin: "http://localhost:3000",
+    origin: "https://chatapp-lime-sigma.vercel.app/",
     // credentials: true,
   },
 });
